@@ -16,6 +16,8 @@ This is a starter template for [Learn Next.js](https://nextjs.org/learn).
 - run the app
 
 - `npm run dev`
+  or
+- `yarn dev`
 
 ## react compoment 部分
 
@@ -81,3 +83,10 @@ This is a starter template for [Learn Next.js](https://nextjs.org/learn).
 
 - 在 pages/posts 建立 [id].js
 - 在 lib/post.js 中 新增 `getAllPostIds` function
+- getStaticProps({ params })
+  params key 是從 檔案名稱來的
+
+### render markdown content
+
+- 透過`remark` library 來渲染 markdown
+  - npm install remark remark-html

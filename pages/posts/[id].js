@@ -9,6 +9,8 @@ export default function Post({ postData }) {
       {postData.id}
       <br />
       {postData.date}
+      <br />
+      <div dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
     </Layout>
   );
 }
@@ -26,7 +28,8 @@ export async function getStaticPaths() {
 // Fetch necessary data for the blog post using params.id
 // params.id id 是從file name讀出來的
 export async function getStaticProps({ params }) {
-  const postData = getPostData(params.id);
+  // Add the "await" keyword like this:
+  const postData = await getPostData(params.id);
   return {
     props: {
       postData,
