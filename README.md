@@ -72,3 +72,12 @@ This is a starter template for [Learn Next.js](https://nextjs.org/learn).
 - 在 top level 建立`lib`資料夾
   - 建立`posts.js`
 - 在 index.js import `import { getSortedPostsData } from '../lib/posts'`
+
+- 從外部 API 或資料庫取得資料方式
+  - https://www.nextjs.cn/learn/basics/data-fetching/getstaticprops-details
+- `getStaticProps`只允許用於 pages 中的 file
+
+## 動態路由
+
+- 在 pages/posts 建立 [id].js
+- 在 lib/post.js 中 新增 `getAllPostIds` function
