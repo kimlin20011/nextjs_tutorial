@@ -1,9 +1,8 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+# next js 學習 demo
+
+- [教學文檔](https://github.com/vercel/next-learn/tree/master/basics)
 
 ## todo
-
-- Assets, Metadata, and CSS @5
-  - https://www.nextjs.cn/learn/basics/assets-metadata-css/css-styling
 
 ## note
 
