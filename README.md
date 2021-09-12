@@ -40,3 +40,9 @@ This is a starter template for [Learn Next.js](https://nextjs.org/learn).
 ### 加入 image
 
 - 在 public 建立 images file
+
+```
+- meta tags (like og:image)
+- Boolean home prop which will adjust the size of the title and the image
+- “Back to home” link at the bottom if home is false
+```
