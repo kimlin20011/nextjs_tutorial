@@ -25,6 +25,8 @@ This is a starter template for [Learn Next.js](https://nextjs.org/learn).
 
 ## CSS 部分
 
+> [some tips](https://www.nextjs.cn/learn/basics/assets-metadata-css/styling-tips)
+
 - nextjs 把 CSS module 視為 component-level styles
 - 放在 components 資料夾裡面
 - 結尾必須命名為`.module.css`
