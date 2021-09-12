@@ -48,3 +48,27 @@ This is a starter template for [Learn Next.js](https://nextjs.org/learn).
 - Boolean home prop which will adjust the size of the title and the image
 - “Back to home” link at the bottom if home is false
 ```
+
+## Pre-rendering and Data Fetching
+
+### Two Forms of Pre-rendering 比較
+
+- Static Generation
+  - 在使用者 request 前先 render 所有 data
+  - 適用於不常刷新的頁面
+  - 較快，但資料同步不即時
+- Server-side Rendering
+  - 在使用者 request 時 render data
+  - 適用於需要長刷新的頁面
+  - 較慢，但資料較為即時
+- Static Generation with data 支援
+
+### 建立 data 資料
+
+- 在 top level 建立 posts 資料夾
+- 建立兩個 file `pre-rendering.md` and `ssg-ssr.md`
+- top containing title and date.
+  - 這叫做 YAML Front Matter, 我們可以使用 library called gray-matter 來解析
+- 在 top level 建立`lib`資料夾
+  - 建立`posts.js`
+- 在 index.js import `import { getSortedPostsData } from '../lib/posts'`
